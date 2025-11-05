@@ -1,0 +1,170 @@
+/* ======== GLOBAL STYLING ======== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffeef0; /* blød lyserød tone */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ======== HEADER ======== */
+header {
+  width: 100%;
+  background-color: #ff7aa2;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ======== MAIN CONTENT ======== */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+}
+
+/* ======== FORM ELEMENTS ======== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #ff7aa2;
+  border-color: #ff7aa2;
+}
+
+/* ======== BUTTON ======== */
+button {
+  background-color: #ff7aa2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff4f85;
+}
+
+/* ======== LINKS ======== */
+a {
+  color: #ff4f85;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======== FIELDSETS ======== */
+fieldset {
+  border: 2px solid #ffe3ea;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: #ff4f85;
+}
+
+/* ======== PASSWORD MESSAGE ======== */
+#message {
+  display: none;
+}
+
+#password:focus + #message {
+  display: block;
+  background: #fff5f7;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ff7aa2;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.invalid {
+  color: #ff4f85;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #ff7aa2;
+  color: white;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media (max-width: 600px) {
+  section {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+}
