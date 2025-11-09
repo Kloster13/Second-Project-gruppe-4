@@ -155,7 +155,7 @@ select {
   top: 40%;
   left: 0;
   width: 250px;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   padding: 10px;
   font-size: 0.9em;
@@ -216,7 +216,7 @@ select {
 #nationality {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #f8f8f8;
+  background: #ffffff;
   appearance: none;
   background-position: right 10px center;
   background-size: 20px 20px;
