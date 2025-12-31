@@ -1,30 +1,18 @@
+html,
+body {
+  height: 100%;
+  margin: 0 0 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;
   top: auto;
-  width: 1px;
-  height: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-.skip-link:focus,
-.skip-link:active {
-  left: 12px;
-  top: 12px;
-  width: auto;
-  height: auto;
-  overflow: visible;
-  clip: auto;
-  background: #777;
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 8px 10px;
-  z-index: 100;
-  border-radius: 4px;
-  text-decoration: none;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
+
 .link a {
   color: #1b1b1b;
   text-decoration: none;
@@ -50,7 +38,6 @@ header h1 {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: display, sans-serif;
   padding-bottom: 40px;
   padding-top: 40px;
 }
@@ -86,7 +73,6 @@ main#maincontent {
 
 .form-container {
   background-color: #fff0f3;
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 40px;
   width: 800px;
@@ -169,8 +155,8 @@ select {
 
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px 24px;
+  grid-template-columns: 1fr;
+  gap: 18px 20px;
   align-items: start;
 }
 .form-grid .form-group label {
@@ -327,6 +313,7 @@ button[type="submit"] {
   border-radius: 10px;
   cursor: pointer;
   font-size: 16pt;
+  font-weight: bold;
   width: 100%;
 }
 input[type="text"]:focus-visible,
@@ -361,59 +348,14 @@ footer {
   color: #777;
   margin: 40px 0;
   padding-bottom: 40px;
-  font-family: Arial, sans-serif;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
   .form-container {
     width: 720px;
     padding: 32px;
   }
-}
-
-@media (max-width: 768px) {
-  .form-container {
-    width: 100%;
-    padding: 24px;
-    box-shadow: none;
-  }
-  .file-btn {
-    font-size: 1.083rem;
-    padding-inline: 20px;
-  }
   .form-grid {
-    gap: 14px 12px;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="date"],
-  input[type="number"],
-  select {
-    padding: 8px 12px;
-    font-size: 13pt;
-  }
-  header h1 {
-    font-size: 22pt;
-  }
-}
-
-@media (max-width: 420px) {
-  .form-container {
-    padding: 16px;
-  }
-  .file-preview img {
-    max-width: 120px;
-    max-height: 90px;
-  }
-  header {
-    padding: 10px 8px;
-  }
-  .logo {
-    max-width: 64px;
-  }
-  .header-content {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
